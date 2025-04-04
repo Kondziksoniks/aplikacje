@@ -1,0 +1,79 @@
+ <div class="ancestors">
+  <div style="width: 300px">div (grandparent)
+    <p>p (direct parent)
+      <span>span</span>
+      </p>
+  </div>
+</div>
+
+potomkowie children() - dc
+<div class="descendants" style="width: 300px;"><div>(current element) </div>
+<p>
+  p (child)
+  <span> span (grandchild)</span>
+</p>
+</div>
+
+
+potomkowie - children()
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(function($){
+$("div"):children().css({"color":"red","border":"2px solid red"});
+});
+</script>
+<style>
+  .descendants * {
+    display:block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
+</style>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(function($){
+    $("div").find("span").css({"color":"red","border": "2px solid red"});
+  });
+<style>
+     .descendants * {
+        display:block;
+        border: 2px solid lightgrey
+        color: lightgrey;
+        padding: 5px;
+        margin:15 px;
+     }
+ 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(function($){
+    $("div").find("span").css({"color":"red","border": "2px solid red"});
+  });
+<style>
+     .descendants * {
+        display:block;
+        border: 2px solid lightgrey
+        color: lightgrey;
+        padding: 5px;
+        margin:15 px;
+     }
+
+
+rodzenstwo znowu 
+<body class="siblings">
+    <div>div (parent)
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+
+
+    </div>
+</body>
